@@ -1,6 +1,6 @@
 function App() {
-  return <div className="bg-red-50">
-    manoj is chutiya
+  return <div className="text-xl bg-red-50">
+    manoj is my son
   </div>
 }
 
