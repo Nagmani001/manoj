@@ -4,7 +4,7 @@ import { Input } from "./ui/input";
 import { useNavigate } from 'react-router-dom';
 export default function Navbar() {
   const navigate = useNavigate();
-  return <div className="hidden lg:flex h-20 items-center justify-between px-3 py-2 ">
+  return <div className="lg:flex h-20 items-center justify-between px-3 py-2 ">
 
     <div className="flex items-center gap-2">
       <ShoppingCart className="h-6 w-6" />

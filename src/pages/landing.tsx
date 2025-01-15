@@ -2,12 +2,20 @@ import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
 import { products } from "../components/product.ts";
 import Product from "@/components/productCard";
+import { BrowserView, MobileView } from "react-device-detect";
 export default function Landing() {
   return <div>
 
-    <div className="sticky top-0 bg-white">
-      <Navbar />
-    </div>
+    <BrowserView>
+      <div className="sticky top-0 bg-white">
+        <Navbar />
+      </div>
+    </BrowserView>
+    <MobileView>
+      <div>
+        asdfasfdasfd
+      </div>
+    </MobileView>
 
     <div className="px-4 py-2">
       <h1 className="text-2xl md:text-3xl font-bold mb-8 mt-3">Featured Products</h1>
