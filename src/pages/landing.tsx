@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar"
 import { products } from "../components/product.ts";
 import Product from "@/components/productCard";
 import { BrowserView, MobileView } from "react-device-detect";
+import { MobileNavbar } from "@/components/mobileNav.tsx";
 export default function Landing() {
   return <div>
 
@@ -13,7 +14,7 @@ export default function Landing() {
     </BrowserView>
     <MobileView>
       <div>
-        asdfasfdasfd
+        <MobileNavbar />
       </div>
     </MobileView>
 
